@@ -1,0 +1,20 @@
+.cont-r {
+  margin: 0 auto;
+  padding: 0 5px;
+
+  @media (min-width: 375px) {
+    max-width: 370px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 760px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1020px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 1120px;
+  }
+}
