@@ -133,3 +133,17 @@
     }
   }
 }
+
+// ------
+
+.before {
+  display: none;
+  @media (min-width: 1440px) {
+    display: inline-block;
+  }
+}
+.after {
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
