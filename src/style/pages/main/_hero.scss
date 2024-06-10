@@ -1,5 +1,6 @@
 .hero {
-  min-height: 100vh;
+  padding-top: 220px;
+  padding-bottom: 230px;
 
   background: radial-gradient(
       50% 50% at 50% 50%,
@@ -18,9 +19,109 @@
         rgba(0, 0, 0, 0) 0%,
         rgba(0, 0, 0, 0.2) 100%
       ),
-      url(../../../assets/img/hero/hero-img-bg-lg.png) lightgray -8.776px 2.606px /
+      url(../../../assets/img/hero/hero-img-bg-lg.png) rgb(18, 18, 18) -8.776px 2.606px /
         99.394% 100.571% no-repeat;
     background-position: 0 0;
     background-size: cover;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 274px;
+    padding-bottom: 256px;
+  }
+}
+
+.hero__container {
+  position: relative;
+  padding: 14px 0px 35px 19px;
+
+  background-image: url(../../../assets/img/bg-decorate/bg-lines.svg);
+  background-position: 0 0;
+  background-repeat: repeat-y;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 344px;
+
+    border-radius: 5px;
+    background: #7f5cff;
+    box-shadow: 0px 0px 17px 0px rgba(191, 58, 255, 0.4);
+
+    @media (min-width: 1440px) {
+      width: 6px;
+      height: 465px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: 14px 0px 35px 50px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 20px 0px 20px 56px;
+  }
+}
+
+.hero__sup-title {
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    margin-bottom: 13px;
+  }
+}
+
+.hero__title {
+  font-size: 26px;
+  line-height: 150%;
+  letter-spacing: 0.26px;
+  text-transform: uppercase;
+  width: 345px;
+  margin-bottom: 20px;
+
+  @media (min-width: 1440px) {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.48px;
+
+    width: 753px;
+
+    margin-bottom: 70px;
+  }
+}
+
+.hero__btn {
+  display: inline-block;
+
+  font-family: 'HeliosBlackC';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 145%;
+
+  padding: 14.417px 21.625px;
+
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.56);
+  background: linear-gradient(99deg, #7a42f4 0%, #4642f4 100%), #fff;
+
+  @media (min-width: 1440px) {
+    border-radius: 6px;
+
+    padding: 16px 24px;
+
+    font-size: 18px;
   }
 }
