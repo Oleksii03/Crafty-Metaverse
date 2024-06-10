@@ -2,19 +2,21 @@
   margin: 0 auto;
   padding: 0 5px;
 
+  outline: 1px solid red;
+
   @media (min-width: 375px) {
-    max-width: 370px;
+    max-width: 345px;
   }
 
   @media (min-width: 768px) {
     max-width: 760px;
   }
 
-  @media (min-width: 1024px) {
-    max-width: 1020px;
-  }
-
   @media (min-width: 1440px) {
     max-width: 1120px;
+  }
+
+  @media (min-width: 1920px) {
+    max-width: 1650px;
   }
 }
