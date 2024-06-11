@@ -1,0 +1,48 @@
+.mob-menu {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+
+  background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../assets/img/hero/hero-img-bg-sm.png) rgb(0, 0, 0) -6.678px 1.983px / 99.394%
+      100.571% no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  pointer-events: none;
+  opacity: 0;
+
+  transition: opacity 350ms linear;
+
+  @media (min-width: 768px) {
+    display: none;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.mob-menu__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.mob-menu__list-link {
+  font-family: 'Plus Jakarta Display';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+  opacity: 0.7;
+}
+
+.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}

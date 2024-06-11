@@ -41,7 +41,9 @@ p {
 }
 
 .to-freeze {
-  overflow: hidden;
+  @media (max-width: 767px) {
+    overflow: hidden;
+  }
 }
 
 body {
