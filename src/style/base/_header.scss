@@ -9,19 +9,13 @@
 
   @keyframes hidden {
     0% {
-      backdrop-filter: blur(0px);
+      background: rgba(0, 0, 0, 0);
     }
 
     5%,
     100% {
-      backdrop-filter: blur(3px);
-      background: rgb(0, 0, 0);
-      background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(0, 0, 0, 1) 16%,
-        rgba(0, 0, 0, 0.5130427170868348) 100%
-      );
+      box-shadow: 0px 7px 9px 0px #000000;
+      background: rgba(0, 0, 0, 0.583);
     }
   }
 }
@@ -74,6 +68,7 @@
         height: 2px;
 
         transform: scaleX(0);
+        opacity: 0;
 
         background: #00dbde;
         box-shadow: 0px 0px 7px 0px rgba(41, 183, 227, 0.33);
@@ -96,6 +91,7 @@
 
         &:hover::after {
           transform: scaleX(100%);
+          opacity: 1;
         }
       }
     }
