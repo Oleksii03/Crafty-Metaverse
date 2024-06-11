@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 5;
 
   animation: hidden auto linear;
   animation-timeline: scroll();
@@ -14,22 +15,8 @@
 
     5%,
     100% {
-      background: rgba(0, 0, 0, 0.833);
-      box-shadow: 0px 7px 9px 0px #000000;
-    }
-  }
-
-  @media (min-width: 768px) {
-    @keyframes hidden {
-      0% {
-        background: rgba(0, 0, 0, 0);
-      }
-
-      5%,
-      100% {
-        background: rgba(0, 0, 0, 0.583);
-        box-shadow: 0px 7px 9px 0px #000000;
-      }
+      background: rgba(0, 0, 0, 0.748);
+      box-shadow: 2px 4px 10px 3px #000000;
     }
   }
 }
@@ -40,8 +27,8 @@
   justify-content: space-between;
 
   @media (max-width: 767px) {
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -89,7 +76,7 @@
         border-radius: 5px;
 
         @media (min-width: 1440px) {
-          bottom: 35px;
+          bottom: 25px;
         }
       }
 
@@ -123,7 +110,6 @@
 
 .header__menu-btn {
   background-color: transparent;
-  padding: 20px 0;
 
   @media (min-width: 768px) {
     display: none;
