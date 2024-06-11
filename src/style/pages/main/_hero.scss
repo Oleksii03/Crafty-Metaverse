@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   padding-top: 220px;
   padding-bottom: 230px;
 
@@ -7,27 +8,33 @@
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.2) 100%
     ),
-    url(../assets/img/hero/hero-img-bg-sm.png) rgb(18, 18, 18) -6.157px 1.828px /
-      99.394% 100.571% no-repeat;
+    url(../assets/img/hero/hero-bg-sm.png) rgb(18, 18, 18) -6.157px 1.828px / 99.394%
+      100.571% no-repeat;
 
   background-position: 0 0;
   background-size: cover;
 
-  @media (min-width: 425px) {
+  @media (min-width: 768px) {
     background: radial-gradient(
         50% 50% at 50% 50%,
         rgba(0, 0, 0, 0) 0%,
         rgba(0, 0, 0, 0.2) 100%
       ),
-      url(../assets/img/hero/hero-img-bg-lg.png) rgb(18, 18, 18) -8.776px 2.606px /
-        99.394% 100.571% no-repeat;
-    background-position: 0 0;
+      url(../assets/img/hero/Hero.png),
+      rgb(18, 18, 18) -8.776px 2.606px / 99.394% 100.571% no-repeat;
+
+    background-position: center center;
     background-size: cover;
   }
 
   @media (min-width: 1440px) {
     padding-top: 274px;
     padding-bottom: 256px;
+  }
+  @media (min-width: 1920px) {
+    &::after {
+      background-position: 70% 35%;
+    }
   }
 }
 
