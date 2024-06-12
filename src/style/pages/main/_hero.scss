@@ -46,6 +46,10 @@
   background-position: 0 0;
   background-repeat: repeat-y;
 
+  @media (min-width: 768px) {
+    background-image: url(../assets/img/bg-decorate/Vector-line.svg);
+  }
+
   &::before {
     content: '';
     position: absolute;
