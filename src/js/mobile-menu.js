@@ -7,8 +7,15 @@ menuBtn.addEventListener('click', toggleMenu);
 function toggleMenu() {
   document.body.classList.toggle('to-freeze');
   menu.classList.toggle('is-visible');
+  onAnimationMenuBtn();
 }
 
 (() => {
   menu.style.paddingTop = headerHeight + 'px';
 })();
+
+function onAnimationMenuBtn() {
+  [...menuBtn.children].forEach(el => {
+    el.classList.toggle('active');
+  });
+}
