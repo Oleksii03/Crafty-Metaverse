@@ -1,0 +1,72 @@
+.about-us {
+  background: #01001f;
+  @media (min-width: 768px) {
+    padding-top: 270px;
+    padding-bottom: 203px;
+    min-height: 100vh;
+
+    background: url(../assets/img/about-us/bg-img-lg.jpg) lightgray -177.509px -206.693px /
+      117.551% 140.248% no-repeat;
+    background-position: center 0;
+    background-size: cover;
+  }
+}
+
+.about-us__bg-img-sm {
+  @media (min-width: 767px) {
+    display: none;
+  }
+}
+
+.about-us__container {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+.about-us__content {
+  position: relative;
+  padding: 14px 0px 14px 24px;
+
+  background-image: url(../assets/img/bg-decorate/vector-line.png);
+  background-position: 0 0;
+  background-repeat: repeat-y;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+
+    border-radius: 5px;
+    background: #56ffeb;
+    box-shadow: 0px 3.218px 10.46px 0px rgba(191, 58, 255, 0.44);
+  }
+}
+
+.about-us__sup-title {
+  font-family: var(--secondary-font);
+  font-size: 16px;
+
+  font-weight: 400;
+  line-height: 140%;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.about-us__title {
+  font-size: 28px;
+  line-height: 109%;
+  text-transform: uppercase;
+
+  margin-bottom: 45px;
+}
+
+.about-us_desc {
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}

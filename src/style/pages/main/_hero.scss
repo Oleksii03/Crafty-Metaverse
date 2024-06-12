@@ -42,7 +42,7 @@
   position: relative;
   padding: 14px 0px 35px 19px;
 
-  background-image: url(../assets/img/bg-decorate/bg-lines.svg);
+  background-image: url(../assets/img/bg-decorate/vector-line.png);
   background-position: 0 0;
   background-repeat: repeat-y;
 
@@ -52,19 +52,14 @@
     top: 0;
     left: 0;
     width: 5px;
-    height: 344px;
+    height: 100%;
 
     border-radius: 5px;
     background: #7f5cff;
     box-shadow: 0px 0px 17px 0px rgba(191, 58, 255, 0.4);
 
-    @media (min-width: 768px) {
-      height: 262px;
-    }
-
     @media (min-width: 1440px) {
       width: 6px;
-      height: 465px;
     }
   }
 

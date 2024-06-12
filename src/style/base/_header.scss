@@ -21,6 +21,10 @@
   }
 }
 
+.transparent {
+  background: #ffffff00;
+}
+
 .header__container {
   display: flex;
   align-items: center;
@@ -139,7 +143,7 @@
       transform: rotate(-45deg);
       top: -6px;
       right: 1px;
-      width: 116%;
+      width: 115%;
     }
   }
   &_middle {
@@ -160,8 +164,8 @@
     &.active {
       transform: rotate(45deg);
       bottom: -6px;
-      right: 0;
-      width: 116%;
+      right: -1px;
+      width: 115%;
     }
   }
 }
