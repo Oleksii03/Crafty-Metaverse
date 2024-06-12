@@ -1,5 +1,6 @@
 .about-us {
   background: #01001f;
+
   @media (min-width: 768px) {
     padding-top: 270px;
     padding-bottom: 203px;
@@ -9,6 +10,15 @@
       117.551% 140.248% no-repeat;
     background-position: center 0;
     background-size: cover;
+  }
+}
+
+.about-us__content-wparr {
+  @media (max-width: 767px) {
+    background-image: url(../assets/img/about-us/bg-decorate/ellipse-right.png);
+
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
   }
 }
 
