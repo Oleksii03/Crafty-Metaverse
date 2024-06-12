@@ -70,6 +70,38 @@
   margin-bottom: 20px;
 }
 
+.about-us__sub-title {
+  position: relative;
+  font-size: 16px;
+  line-height: 145%;
+  text-transform: uppercase;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -46px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url(../assets/img/about-us/bg-decorate/line-dec.svg);
+    background-repeat: no-repeat;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: -46px;
+    left: 0;
+    width: 26px;
+    height: 26px;
+
+    background-color: transparent;
+
+    border-radius: 50%;
+    border: 2px solid #7f5cff;
+  }
+}
+
 .about-us__title {
   font-size: 28px;
   line-height: 109%;
@@ -83,4 +115,6 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
+
+  margin-bottom: 61px;
 }
