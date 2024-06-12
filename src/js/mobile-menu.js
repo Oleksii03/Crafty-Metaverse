@@ -1,5 +1,5 @@
 const menuBtn = document.querySelector('.js-menu-open');
-const headerHeight = document.querySelector('.js-header').offsetHeight;
+const header = document.querySelector('.js-header');
 const menu = document.querySelector('.js-menu');
 
 menuBtn.addEventListener('click', toggleMenu);
@@ -11,7 +11,7 @@ function toggleMenu() {
 }
 
 (() => {
-  menu.style.paddingTop = headerHeight + 'px';
+  menu.style.paddingTop = header.offsetHeight + 15 + 'px';
 })();
 
 function onAnimationMenuBtn() {

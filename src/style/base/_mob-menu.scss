@@ -4,7 +4,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 10;
+  z-index: 5;
 
   background: radial-gradient(
       50% 50% at 50% 50%,
@@ -26,6 +26,11 @@
     opacity: 1;
     pointer-events: auto;
   }
+}
+
+.mob-menu__container {
+  height: calc(100dvh - 150px);
+  overflow-y: auto;
 }
 
 .mob-menu__list {

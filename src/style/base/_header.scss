@@ -3,19 +3,19 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 15;
+  z-index: 10;
 
   animation: hidden auto linear;
   animation-timeline: scroll();
 
   @keyframes hidden {
     0% {
-      background: rgba(0, 0, 0, 0);
+      background: transparent;
     }
 
     5%,
     100% {
-      background: rgba(0, 0, 0, 0.748);
+      background: rgba(0, 0, 0, 0.618);
       box-shadow: 2px 4px 10px 3px #000000;
     }
   }
@@ -112,6 +112,7 @@
 
 .header__menu-btn {
   position: relative;
+
   background-color: transparent;
   width: 32px;
   height: 16px;
@@ -119,15 +120,6 @@
   @media (min-width: 768px) {
     display: none;
   }
-
-  // &:hover .menu-btn__line::before {
-  //   top: 50%;
-  //   transform: translateY(-50%);
-  // }
-  // &:hover .menu-btn__line::after {
-  //   top: 50%;
-  //   transform: translateY(-50%);
-  // }
 }
 
 .menu-btn__line {
