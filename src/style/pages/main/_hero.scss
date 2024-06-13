@@ -118,6 +118,45 @@
 
     margin-bottom: 60px;
   }
+
+  &_dec-img-before {
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 28px;
+      height: 28px;
+      background-image: url(../assets/img/bg-decorate/star-sm.svg);
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  &_dec-img-after {
+    display: none;
+    @media (min-width: 1440px) {
+      position: relative;
+      display: inline-block;
+      width: 46px;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 46px;
+        height: 46px;
+        background-image: url(../assets/img/bg-decorate/star-lg.svg);
+        background-repeat: no-repeat;
+      }
+    }
+  }
 }
 
 .hero__btn {
@@ -158,42 +197,3 @@
 }
 
 // ------
-
-.hero__title_dec-img-before {
-  position: relative;
-  display: inline-block;
-  width: 28px;
-  &::before {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 28px;
-    height: 28px;
-    background-image: url(../assets/img/bg-decorate/star-sm.svg);
-    background-repeat: no-repeat;
-  }
-
-  @media (min-width: 1440px) {
-    display: none;
-  }
-}
-
-.hero__title_dec-img-after {
-  display: none;
-  @media (min-width: 1440px) {
-    position: relative;
-    display: inline-block;
-    width: 46px;
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      width: 46px;
-      height: 46px;
-      background-image: url(../assets/img/bg-decorate/star-lg.svg);
-      background-repeat: no-repeat;
-    }
-  }
-}
