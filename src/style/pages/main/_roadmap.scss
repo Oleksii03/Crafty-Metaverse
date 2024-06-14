@@ -1,5 +1,4 @@
 .roadmap {
-  min-height: 300vh;
   overflow: hidden;
 
   padding-top: 88px;
@@ -54,7 +53,25 @@
 
   & > img {
     position: absolute;
-    top: -55%;
+    top: -60%;
+    left: -30%;
+  }
+}
+.content-block__q3 {
+  position: relative;
+
+  & > img {
+    position: absolute;
+    top: -67%;
+    left: 30%;
+  }
+}
+.content-block__q4 {
+  position: relative;
+
+  & > img {
+    position: absolute;
+    top: -75%;
     left: -30%;
   }
 }
@@ -86,4 +103,10 @@
   background-image: url(../assets/img/roadmap/diamond-dec.svg);
   background-repeat: no-repeat;
   padding-left: 36px;
+
+  &_inner {
+    & > span {
+      margin-right: 15px;
+    }
+  }
 }
