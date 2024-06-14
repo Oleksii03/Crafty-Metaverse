@@ -1,11 +1,9 @@
-.cont-r {
+.container {
   margin: 0 auto;
-  padding: 0 5px;
-
-  // outline: 1px solid red;
+  padding: 0 15px;
 
   @media (min-width: 375px) {
-    max-width: 345px;
+    max-width: 365px;
   }
 
   @media (min-width: 768px) {

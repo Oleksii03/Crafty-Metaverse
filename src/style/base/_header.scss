@@ -21,18 +21,14 @@
   }
 }
 
-.transparent {
-  background: #ffffff00;
-}
-
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   @media (max-width: 767px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
