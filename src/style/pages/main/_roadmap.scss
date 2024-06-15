@@ -24,9 +24,6 @@
   }
 }
 
-.roadmap__container {
-}
-
 .roadmap__content {
   max-width: 1220px;
   margin: 0 auto;
@@ -48,6 +45,23 @@
 
 .bg-decorate__circle {
   max-width: 418px;
+
+  animation-name: circle;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+  @keyframes circle {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
 }
 
 .content-block__title {
