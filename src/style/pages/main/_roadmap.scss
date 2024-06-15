@@ -45,6 +45,7 @@
 
 .bg-decorate__circle {
   max-width: 418px;
+  pointer-events: none;
 
   animation-name: circle;
   animation-duration: 2.5s;
@@ -116,16 +117,16 @@
 
   & > .bg-decorate__circle {
     position: absolute;
-    top: -50%;
+    top: -40%;
     left: 30%;
 
     @media (min-width: 768px) {
-      top: -58%;
-      left: 38%;
+      top: -40%;
+      left: 35%;
     }
     @media (min-width: 1440px) {
-      top: -41%;
-      left: 23%;
+      top: -35%;
+      left: 21%;
     }
     @media (min-width: 1920px) {
       top: -40%;
@@ -191,4 +192,34 @@
       left: -70%;
     }
   }
+}
+
+// ---------list-more--------------
+
+.list-more__box > ul {
+  transition: all 300ms linear;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.content-block__list.active {
+  margin-top: 15px;
+
+  & ~ .list-more__btn > svg {
+    transform: rotate(180deg);
+  }
+}
+
+.list-more__btn {
+  margin-top: 23px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 145%;
 }
