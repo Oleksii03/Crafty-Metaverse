@@ -36,11 +36,14 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
 
+  @media (min-width: 768px) {
+    background-size: 40% 89%;
+  }
+
   @media (min-width: 1440px) {
     margin-top: 90px;
     background-image: url(../assets/img/roadmap/bg-decorate/bg-line-lg.png),
       url(../assets/img/roadmap/bg-decorate/bg-line-two-lg.png);
-    background-size: 40% 90%;
   }
 }
 
@@ -182,8 +185,8 @@
     left: -35%;
 
     @media (min-width: 768px) {
-      top: -134px;
-      left: -74%;
+      top: -130px;
+      left: -69%;
     }
 
     @media (min-width: 1440px) {
