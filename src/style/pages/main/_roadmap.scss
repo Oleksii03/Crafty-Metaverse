@@ -117,20 +117,19 @@
 
   & > .bg-decorate__circle {
     position: absolute;
-    top: -40%;
+    top: -170px;
     left: 30%;
 
     @media (min-width: 768px) {
-      top: -40%;
       left: 35%;
     }
     @media (min-width: 1440px) {
-      top: -35%;
-      left: 21%;
+      top: -130px;
+      left: 22%;
     }
     @media (min-width: 1920px) {
-      top: -40%;
-      left: 23%;
+      top: -138px;
+      left: 25%;
     }
   }
 }
@@ -139,15 +138,15 @@
 
   & > .bg-decorate__circle {
     position: absolute;
-    top: -60%;
+    top: -210px;
     left: -30%;
 
     @media (min-width: 768px) {
-      top: -48%;
+      top: -146px;
       left: -70%;
     }
     @media (min-width: 1440px) {
-      top: -38%;
+      // top: -38%;
       left: -70%;
     }
   }
@@ -183,8 +182,8 @@
     left: -30%;
 
     @media (min-width: 768px) {
-      top: 0;
-      left: -77%;
+      top: -134px;
+      left: -74%;
     }
 
     @media (min-width: 1440px) {
@@ -196,25 +195,31 @@
 
 // ---------list-more--------------
 
-.list-more__box > ul {
-  transition: all 300ms linear;
-  max-height: 0;
-  overflow: hidden;
-}
+.list-more__box {
+  max-width: 350px;
 
-.content-block__list.active {
-  margin-top: 15px;
+  & > ul {
+    transition: all 300ms linear;
+    max-height: 0;
+    overflow: hidden;
 
-  & ~ .list-more__btn > svg {
-    transform: rotate(180deg);
+    &.active {
+      margin-top: 15px;
+
+      & ~ .list-more__btn > svg {
+        transform: rotate(180deg);
+      }
+    }
   }
 }
 
 .list-more__btn {
   margin-top: 23px;
+
   background-color: transparent;
   display: flex;
   align-items: center;
+
   column-gap: 10px;
 
   color: #fff;
@@ -222,4 +227,13 @@
   font-style: normal;
   font-weight: 700;
   line-height: 145%;
+
+  @media (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  & > svg {
+    transition: all 300ms linear;
+  }
 }
