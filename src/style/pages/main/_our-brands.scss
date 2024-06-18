@@ -6,7 +6,11 @@
     url(../assets/img/our-brands/bg-img-sm.png);
   background-repeat: repeat-y, no-repeat;
   background-position: 50% 50%;
-  background-size: 100% 17px, 100% 100%;
+  background-size: 100% 14px, 100% 100%;
+
+  @media (min-width: 375px) {
+    background-size: 100% 15px, 100% 100%;
+  }
 
   @media (min-width: 768px) {
     background-image: url(../assets/img/our-brands/bg-img-lg.png);
@@ -44,10 +48,8 @@
   flex-direction: column;
 
   &-img {
-    // max-width: 298px;
-    // // max-height: 399px;
-
-    // height: 399px;
+    width: 298px;
+    height: 399px;
 
     margin-bottom: 54px;
   }
