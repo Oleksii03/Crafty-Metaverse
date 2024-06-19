@@ -1,0 +1,102 @@
+.our-resources {
+  min-height: 100vh;
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  background: var(--black-background-color);
+
+  @media (max-width: 767px) {
+    background-image: url(../assets/img/our-resources/ellipse-sm.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 90px;
+    padding-bottom: 318px;
+  }
+}
+
+.our-resources__container {
+  @media (min-width: 768px) {
+    background-image: url(../assets/img/our-resources/ellipse-lg.png);
+    background-repeat: no-repeat;
+    background-position: 15px 50%;
+    background-size: 100% 100%;
+  }
+}
+
+.our-resources__content {
+  padding-top: 47px;
+
+  display: grid;
+  row-gap: 52px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 50%);
+    // align-items: center;
+  }
+}
+
+.our-resources__content-description {
+  @media (min-width: 768px) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+.our-resources__content-picture {
+  max-width: 771.637px;
+  display: block;
+
+  @media (max-width: 767px) {
+    background-image: url(../../../assets/img/our-resources/Gradients-img-sm.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-width: 768px) {
+    grid-column: 2/3;
+  }
+}
+
+.our-resources__content-description {
+  position: relative;
+  padding: 14px 0px 35px 19px;
+
+  background-image: url(../assets/img/bg-decorate/vector-line.png);
+  background-position: 0 0;
+  background-repeat: repeat-y;
+
+  @media (min-width: 768px) {
+    background-image: url(../assets/img/bg-decorate/Vector-line.svg);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+
+    border-radius: 5px;
+    background: #7f5cff;
+    box-shadow: 0px 0px 17px 0px rgba(191, 58, 255, 0.4);
+
+    @media (min-width: 1440px) {
+      width: 6px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: 14px 0px 35px 50px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 20px 0px 20px 56px;
+  }
+}
