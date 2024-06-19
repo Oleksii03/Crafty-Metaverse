@@ -50,22 +50,6 @@
   align-items: center;
   flex-direction: column;
 
-  &-img {
-    max-width: 298px;
-    height: 399px;
-
-    margin-bottom: 54px;
-
-    @media (min-width: 768px) and (max-width: 1439px) {
-      max-width: 298px;
-      height: 270px;
-    }
-
-    @media (min-width: 1440px) {
-      margin-bottom: 62px;
-    }
-  }
-
   // ----bg--decorations-----
 
   &:nth-child(1) > .item-content {
@@ -137,25 +121,54 @@
       background: #f00afe;
       box-shadow: 0px 0px 4px 0px rgba(56, 219, 255, 0.5);
     }
+
+    & > .item-content__title ~ br {
+      display: none;
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
   }
 }
 
 .item-content {
   position: relative;
   border-radius: 1px;
+  transition: background 250ms linear;
 
   text-align: center;
   padding-top: 46px;
 
-  @media (min-width: 768px) and (max-width: 1439px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-  }
-
   @media (min-width: 1920px) {
     width: 385px;
+  }
+}
+
+// ----img--------
+
+.brands-list__item-img {
+  max-width: 298px;
+  height: 399px;
+
+  margin-bottom: 54px;
+
+  @media (min-width: 768px) and (max-width: 1439px) {
+    max-width: 298px;
+    height: 270px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 62px;
+    cursor: pointer;
+    transition: all 250ms linear;
+
+    &:hover {
+      transform: translateY(-10px);
+
+      & ~ .item-content {
+        background-size: 100% 150%;
+      }
+    }
   }
 }
 
@@ -190,11 +203,8 @@
   }
 
   @media (min-width: 768px) and (max-width: 1439px) {
-    font-size: 16px;
-
-    max-height: 200px;
-    overflow: auto;
-    text-overflow: ellipsis;
+    font-size: 13px;
+    text-align: justify;
   }
   @media (min-width: 1440px) {
     font-size: 18px;
