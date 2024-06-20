@@ -1,20 +1,9 @@
 const contentBlock = document.querySelector('.content-block');
-
 const btnMoreQ1 = document.querySelector('.js-list-more-btn');
 const btnMoreQ2 = document.querySelector('.js-list-more-btn-q2');
-
 const innerListQ1 = document.querySelector('.js-list');
 const innerListQ2 = document.querySelector('.js-list-q2');
-
 const imgQ1 = document.querySelector('.js-bg-circle-q1');
-
-(function () {
-  [...contentBlock.children].forEach((el, idx) => {
-    if (!((idx + 1) % 2)) {
-      el.style.marginLeft = 'auto';
-    }
-  });
-})();
 
 btnMoreQ1.addEventListener('click', onToggleInnerListQ1);
 btnMoreQ2.addEventListener('click', onToggleInnerListQ2);
