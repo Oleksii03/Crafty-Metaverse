@@ -63,12 +63,27 @@
       width: 46px;
       height: 46px;
 
+      transition: all 450ms linear;
+
       transform: translateX(-50%);
 
       background-image: url(../assets/img/bg-decorate/star-lg.svg);
       background-repeat: no-repeat;
 
       z-index: 1;
+    }
+
+    @media (min-width: 1440px) {
+      &:hover::before {
+        left: 20px;
+        transform: rotate(180deg);
+        filter: drop-shadow(0px 0px 15px rgb(238, 255, 2));
+      }
+    }
+    @media (min-width: 1920px) {
+      &:hover::before {
+        left: 50px;
+      }
     }
 
     & > .item-content {
