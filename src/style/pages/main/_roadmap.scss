@@ -5,15 +5,15 @@
   padding-bottom: 157px;
   background: #090812;
 
-  background-image: url(../assets/img/roadmap/bg-decorate/ellipse-top-lg.png),
-    url(../../../assets/img/roadmap/bg-decorate/ellipse-bottom-lg.png);
+  background-image: url(../assets/img/roadmap/bg-decorate/ellipse-top-lg.webp),
+    url(../../../assets/img/roadmap/bg-decorate/ellipse-bottom-lg.webp);
   background-repeat: no-repeat;
   background-position: 0 0, 100% 100%;
 
   @media (max-width: 1439px) {
-    background-image: url(../assets/img/roadmap/bg-decorate/ellipse-top-mob.png),
-      url(../assets/img/roadmap/bg-decorate/ellipse-bottom-mob.png),
-      url(../assets/img/roadmap/bg-decorate/ellipse-bottom-mob.png);
+    background-image: url(../assets/img/roadmap/bg-decorate/ellipse-top-mob.webp),
+      url(../assets/img/roadmap/bg-decorate/ellipse-bottom-mob.webp),
+      url(../assets/img/roadmap/bg-decorate/ellipse-bottom-mob.webp);
     background-repeat: no-repeat;
     background-position: 0 0, 100% 50%, 100% 100%;
   }
