@@ -12,7 +12,7 @@
   }
 
   @media (min-width: 1440px) {
-    padding-top: 90px;
+    padding-top: 30px;
     padding-bottom: 318px;
   }
 }
@@ -31,12 +31,13 @@
   row-gap: 52px;
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: 40% 50%;
     align-items: center;
   }
 
   @media (min-width: 1440px) {
-    margin-top: 140px;
+    margin-top: 77px;
+    column-gap: 64px;
   }
 }
 
@@ -81,8 +82,8 @@
       right: 0px;
     }
     @media (min-width: 1920px) {
-      bottom: -20%;
-      right: 70%;
+      bottom: -17%;
+      right: 72%;
     }
   }
 
@@ -97,7 +98,7 @@
     background-image: url(../assets/img/bg-decorate/Vector-line.svg);
   }
   @media (min-width: 1920px) {
-    padding: 68px 0px 100px 174px;
+    padding: 68px 0px 100px 125px;
   }
 }
 
