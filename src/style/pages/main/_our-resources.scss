@@ -5,7 +5,7 @@
   background: var(--black-background-color);
 
   @media (max-width: 767px) {
-    background-image: url(../assets/img/our-resources/ellipse-sm.png);
+    background-image: url(../assets/img/our-resources/ellipse-sm.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -19,7 +19,7 @@
 
 .our-resources__content {
   @media (min-width: 768px) {
-    background-image: url(../assets/img/our-resources/ellipse-lg.png);
+    background-image: url(../assets/img/our-resources/ellipse-lg.webp);
     background-repeat: no-repeat;
     background-position: 0 50%;
     background-size: 100% 100%;
@@ -159,7 +159,7 @@
   display: block;
 
   @media (max-width: 767px) {
-    background-image: url(../assets/img/our-resources/Gradients-img-sm.png);
+    background-image: url(../assets/img/our-resources/Gradients-img-sm.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
