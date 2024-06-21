@@ -210,7 +210,7 @@
     max-height: 0;
     overflow: hidden;
 
-    &.active {
+    &.list-more__box_active {
       margin-top: 15px;
 
       & ~ .list-more__btn > svg {

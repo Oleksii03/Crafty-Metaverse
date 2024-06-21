@@ -26,9 +26,15 @@
     opacity: 1;
     pointer-events: auto;
   }
+
+  &_visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 
 .mob-menu__container {
+  margin-top: 100px;
   height: calc(100dvh - 150px);
   overflow-y: auto;
 }
@@ -40,14 +46,9 @@
 }
 
 .mob-menu__list-link {
-  font-family: 'Plus Jakarta Display';
+  font-family: var(--secondary-font);
   font-size: 20px;
   font-weight: 500;
   line-height: 140%;
   opacity: 0.7;
-}
-
-.is-visible {
-  opacity: 1;
-  pointer-events: auto;
 }
