@@ -1,6 +1,8 @@
 .our-resources {
+  position: relative;
+
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 180px;
 
   background: var(--black-background-color);
 
@@ -135,7 +137,7 @@
 .description-content__text {
   margin-bottom: 30px;
 
-  font-family: 'Gilroy';
+  font-family: 'Gilroy' sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -209,5 +211,44 @@
 
   @media (min-width: 1920px) {
     margin-bottom: -118px;
+  }
+}
+
+.game__running-line {
+  border: 1px solid rgba(255, 255, 255, 0.633);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(26.195560455322266px);
+  background-image: url(../assets/img/bg-decorate/vector-line.png);
+  background-repeat: repeat-y;
+  background-position: 0 0;
+  background-size: 200% 30px;
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  width: 200%;
+  transform: rotate(-9.094deg);
+  z-index: 10;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+
+  &-text {
+    font-size: 52px;
+
+    line-height: 140%;
+    letter-spacing: 0.524px;
+    flex-shrink: 0;
+
+    animation: running-line 5s linear infinite;
+
+    @keyframes running-line {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
   }
 }
