@@ -15,8 +15,8 @@
   }
 
   @media (min-width: 1920px) {
-    padding-top: 330px;
-    padding-bottom: 135px;
+    padding-top: 377px;
+    padding-bottom: 98px;
   }
 }
 
@@ -89,12 +89,12 @@
     margin-bottom: 32px;
 
     &_top {
-      margin-bottom: 45px;
+      margin-bottom: 38px;
     }
 
     @media (min-width: 1920px) {
       font-size: 20px;
-      margin-bottom: 45px;
+      margin-bottom: 46px;
     }
   }
 
@@ -135,8 +135,9 @@
     background-size: 107px 200%;
   }
   @media (min-width: 1920px) {
-    padding: 68px 27px 200px 36px;
+    padding: 75px 27px 165px 36px;
     width: 644px;
+    margin-right: -115px;
   }
 }
 
@@ -146,8 +147,6 @@
   order: 3;
   @media (max-width: 767px) {
     position: relative;
-    margin-left: -70px;
-    margin-top: -70px;
   }
 }
 
@@ -164,6 +163,8 @@
     left: 40%;
   }
   @media (min-width: 1920px) {
+    margin-bottom: 38px;
+    margin-left: 12px;
     align-self: flex-end;
   }
 }
@@ -171,6 +172,11 @@
 .game__img-guy {
   width: 291px;
   height: 379px;
+
+  @media (max-width: 767px) {
+    margin-left: -70px;
+    margin-top: -70px;
+  }
 
   @media (min-width: 768px) {
     width: 200px;

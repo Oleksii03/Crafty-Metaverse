@@ -20,7 +20,7 @@
 
   @media (min-width: 1440px) {
     padding-top: 219px;
-    padding-bottom: 284px;
+    padding-bottom: 238px;
   }
 }
 
@@ -64,6 +64,10 @@
     @media (min-width: 1440px) {
       font-size: 22px;
     }
+  }
+
+  @media (min-width: 1920px) {
+    row-gap: 0px;
   }
 }
 
@@ -148,6 +152,10 @@
       left: 15%;
     }
   }
+
+  @media (min-width: 1920px) {
+    margin-bottom: 112px;
+  }
 }
 .content-block__q2 {
   position: relative;
@@ -170,6 +178,9 @@
       top: -225px;
     }
   }
+  @media (min-width: 1920px) {
+    margin-bottom: 40px;
+  }
 }
 .content-block__q3 {
   position: relative;
@@ -188,9 +199,12 @@
       left: 29%;
     }
     @media (min-width: 1920px) {
-      top: -86%;
-      left: 15%;
+      top: -63%;
+      left: 17%;
     }
+  }
+  @media (min-width: 1920px) {
+    margin-bottom: 238px;
   }
 }
 .content-block__q4 {
@@ -211,7 +225,7 @@
       left: -58%;
     }
     @media (min-width: 1920px) {
-      top: -48%;
+      top: -65%;
       left: -90%;
     }
   }

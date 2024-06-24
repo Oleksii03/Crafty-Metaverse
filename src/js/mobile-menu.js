@@ -1,4 +1,4 @@
-export function createsMobileMenu() {
+export function createMobileMenu() {
   const menuBtn = document.querySelector('.js-menu-open');
   const menu = document.querySelector('.js-menu');
 

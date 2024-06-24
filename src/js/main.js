@@ -1,7 +1,7 @@
-import { createsMobileMenu } from './mobile-menu';
-import { createsRoadmap } from './roadmap';
+import { createMobileMenu } from './mobile-menu';
+import { createRoadmap } from './roadmap';
 
 document.addEventListener('DOMContentLoaded', () => {
-  createsMobileMenu();
-  createsRoadmap();
+  createMobileMenu();
+  createRoadmap();
 });
