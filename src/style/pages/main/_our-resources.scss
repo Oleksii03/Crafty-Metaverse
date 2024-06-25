@@ -194,6 +194,10 @@
     min-width: 188px;
   }
 
+  @media (min-width: 768px) {
+    padding: 15px 15px;
+  }
+
   @media (min-width: 1440px) {
     border-radius: 6px;
 
@@ -242,7 +246,7 @@
     text-wrap: nowrap;
     flex-shrink: 0;
 
-    animation: running-line 8s linear infinite;
+    animation: running-line 12s linear infinite;
 
     @keyframes running-line {
       0% {
