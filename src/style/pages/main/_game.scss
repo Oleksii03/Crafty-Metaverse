@@ -1,4 +1,5 @@
 .game {
+  position: relative;
   padding-top: 182px;
   padding-bottom: 138px;
   background: #000;
@@ -8,9 +9,30 @@
   background-size: cover;
 
   @media (min-width: 768px) {
-    background-image: url(../assets/img/game/bg/game-bg.webp);
+    background: url(../assets/img/game/bg/game-bg.webp);
     background-position: 100% 100%;
     background-size: cover;
+  }
+
+  @media (min-width: 1440px) {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 10%;
+      right: 0;
+      width: 232.767px;
+      height: 229.993px;
+      background-image: url(../../../assets/img/our-resources/Gradients-img-sm.webp);
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @media (min-width: 1920px) {
+        width: 450px;
+        height: 450px;
+        top: 15%;
+        right: -90px;
+      }
+    }
   }
 
   @media (min-width: 1920px) {
