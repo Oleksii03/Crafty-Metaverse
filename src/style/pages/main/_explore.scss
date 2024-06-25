@@ -9,14 +9,18 @@
   padding-top: 48px;
   padding-left: 18px;
   padding-right: 16px;
+  margin-bottom: 130px;
   border-radius: 1px;
   background: linear-gradient(
       0deg,
       rgba(58, 78, 255, 0) 0%,
       rgba(156, 58, 255, 0.14) 100%
     ),
-    url(../../../assets/img/game/bg/line-bg.webp);
-  background-repeat: repeat-x;
+    url(../assets/img/game/bg/line-bg.webp),
+    url(../assets/img/our-resources/ellipse-lg.webp);
+  background-repeat: no-repeat, repeat-x;
+  background-position: 50% 50%, 0 0;
+  background-size: 100% 100%, auto;
   backdrop-filter: blur(15px);
 
   &::before {
@@ -56,6 +60,18 @@
   }
   &-btn {
     display: inline-block;
+    min-width: 176px;
+    padding: 16px 24px;
+    border-radius: 6px;
+    background: var(
+      --1,
+      linear-gradient(99deg, #7a42f4 0%, #4642f4 100%),
+      #fff
+    );
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    text-align: center;
+    line-height: 145%;
     margin-bottom: 34px;
   }
 }
