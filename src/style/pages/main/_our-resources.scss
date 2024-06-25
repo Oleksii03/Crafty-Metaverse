@@ -2,7 +2,7 @@
   position: relative;
 
   padding-top: 80px;
-  padding-bottom: 180px;
+  padding-bottom: 110px;
 
   background: var(--black-background-color);
 
@@ -14,7 +14,7 @@
   }
 
   @media (min-width: 1440px) {
-    padding-top: 30px;
+    padding-top: 52px;
     padding-bottom: 318px;
   }
 }
@@ -218,37 +218,95 @@
   }
 }
 
-.game__running-line {
+.game__running-line--wrapper {
+  position: absolute;
+  bottom: -77px;
+  left: -50%;
+  width: 200%;
+  transform: rotate(-10deg);
+  z-index: 1;
+
+  @media (min-width: 1920px) {
+    bottom: -220px;
+  }
+}
+
+.game__running-line_top {
   padding-top: 3px;
   border: 1px solid rgba(255, 255, 255, 0.633);
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(26.195560455322266px);
   background-image: url(../assets/img/bg-decorate/vector-line.png);
   background-repeat: repeat-y;
-  background-position: 0 0;
   background-size: 200% 30px;
-  position: absolute;
-  bottom: 35px;
-  left: -50%;
-  width: 200%;
-  transform: rotate(-10deg);
-  z-index: 1;
-  flex-shrink: 0;
   display: flex;
   align-items: center;
   overflow: hidden;
+  margin-bottom: 8px;
+
+  @media (min-width: 1440px) {
+    background-size: 200% 161px;
+  }
+
+  @media (min-width: 1920px) {
+    margin-bottom: 20px;
+  }
 
   &-text {
     font-size: 52px;
-
     line-height: 140%;
     letter-spacing: 0.524px;
     text-wrap: nowrap;
     flex-shrink: 0;
 
-    animation: running-line 12s linear infinite;
+    @media (min-width: 1440px) {
+      font-size: 120px;
+    }
+    @media (min-width: 1920px) {
+      font-size: 200px;
+    }
 
-    @keyframes running-line {
+    animation: running-line-top 12s linear infinite;
+
+    @keyframes running-line-top {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  }
+}
+
+.game__running-line_bottom {
+  padding: 5px 0px;
+  background-color: var(--black-background-color);
+  background-size: 200% 30px;
+
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  &-text {
+    color: #fd40ff;
+    font-size: 19px;
+    line-height: 140%;
+    letter-spacing: 0.189px;
+    text-wrap: nowrap;
+    flex-shrink: 0;
+
+    @media (min-width: 1440px) {
+      font-size: 50px;
+    }
+
+    @media (min-width: 1920px) {
+      font-size: 72px;
+    }
+
+    animation: running-line-bottom 15s linear infinite;
+
+    @keyframes running-line-bottom {
       0% {
         transform: translateX(0);
       }
