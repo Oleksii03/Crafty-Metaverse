@@ -2,7 +2,7 @@
   overflow: hidden;
 
   padding-top: 88px;
-  padding-bottom: 157px;
+  padding-bottom: 178px;
   background: #090812;
 
   background-image: url(../assets/img/roadmap/bg-decorate/ellipse-top-lg.webp),
@@ -30,7 +30,7 @@
   margin-right: auto;
 
   display: grid;
-  row-gap: 116px;
+  row-gap: 148px;
 
   margin-top: 123px;
   background-image: url(../assets/img/roadmap/bg-decorate/bg-line-sm.png),
@@ -73,7 +73,7 @@
 
 .bg-decorate__circle {
   display: block;
-  width: 350px;
+  width: 450px;
   pointer-events: none;
   animation-name: circle;
   animation-duration: 2.5s;
@@ -136,16 +136,16 @@
 
   & > .bg-decorate__circle {
     position: absolute;
-    top: -170px;
-    left: 30%;
+    top: -227px;
+    left: 9%;
 
     @media (min-width: 768px) {
-      top: -120px;
-      left: 36%;
+      top: -162px;
+      left: 30%;
     }
     @media (min-width: 1440px) {
-      top: -130px;
-      left: 26%;
+      top: -155px;
+      left: 20%;
     }
     @media (min-width: 1920px) {
       top: -207px;
@@ -162,15 +162,15 @@
 
   & > .bg-decorate__circle {
     position: absolute;
-    top: -210px;
-    left: -30%;
+    top: -274px;
+    left: -44%;
 
     @media (min-width: 768px) {
-      top: -122px;
-      left: -63%;
+      top: -165px;
+      left: -75%;
     }
     @media (min-width: 1440px) {
-      left: -60%;
+      left: -70%;
     }
 
     @media (min-width: 1920px) {
@@ -187,16 +187,16 @@
 
   & > .bg-decorate__circle {
     position: absolute;
-    top: -74%;
-    left: 30%;
+    top: -89%;
+    left: 14%;
 
     @media (min-width: 768px) {
-      top: -40%;
-      left: 43%;
+      top: -55%;
+      left: 40%;
     }
     @media (min-width: 1440px) {
-      top: -33%;
-      left: 29%;
+      top: -48%;
+      left: 26%;
     }
     @media (min-width: 1920px) {
       top: -63%;
@@ -212,17 +212,17 @@
 
   & > .bg-decorate__circle {
     position: absolute;
-    top: -75%;
-    left: -35%;
+    top: -107%;
+    left: -48%;
 
     @media (min-width: 768px) {
-      top: -108px;
-      left: -59%;
+      top: -138px;
+      left: -74%;
     }
 
     @media (min-width: 1440px) {
-      top: -38%;
-      left: -58%;
+      top: -53%;
+      left: -71%;
     }
     @media (min-width: 1920px) {
       top: -65%;

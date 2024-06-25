@@ -30,7 +30,7 @@
   margin-top: 47px;
 
   display: grid;
-  row-gap: 52px;
+  row-gap: 100px;
 
   @media (min-width: 768px) {
     grid-template-columns: 40% 50%;
@@ -72,7 +72,7 @@
     content: '';
     position: absolute;
     bottom: 30px;
-    right: 25px;
+    right: 5px;
     width: 46px;
     height: 46px;
 
@@ -135,9 +135,9 @@
 }
 
 .description-content__text {
-  margin-bottom: 30px;
+  margin-bottom: 36px;
 
-  font-family: 'Gilroy' sans-serif;
+  font-family: 'Gilroy';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -184,7 +184,7 @@
 
   transition: box-shadow 250ms linear;
 
-  padding: 14.417px 21.625px;
+  padding: 15px 30px;
 
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.56);
@@ -215,6 +215,7 @@
 }
 
 .game__running-line {
+  padding-top: 3px;
   border: 1px solid rgba(255, 255, 255, 0.633);
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(26.195560455322266px);
@@ -223,15 +224,15 @@
   background-position: 0 0;
   background-size: 200% 30px;
   position: absolute;
-  bottom: 0;
+  bottom: 35px;
   left: -50%;
   width: 200%;
-  transform: rotate(-9.094deg);
+  transform: rotate(-10deg);
   z-index: 1;
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  overflow-x: hidden;
+  overflow: hidden;
 
   &-text {
     font-size: 52px;
@@ -241,7 +242,7 @@
     text-wrap: nowrap;
     flex-shrink: 0;
 
-    animation: running-line 5s linear infinite;
+    animation: running-line 8s linear infinite;
 
     @keyframes running-line {
       0% {

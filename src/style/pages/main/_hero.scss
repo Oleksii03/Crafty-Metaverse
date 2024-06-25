@@ -1,7 +1,7 @@
 .hero {
   position: relative;
-  padding-top: 220px;
-  padding-bottom: 230px;
+  padding-top: 217px;
+  padding-bottom: 233px;
 
   background: radial-gradient(
       50% 50% at 50% 50%,
@@ -40,7 +40,7 @@
 
 .hero__content {
   position: relative;
-  padding: 14px 0px 35px 19px;
+  padding: 14px 0px 34px 19px;
 
   background-image: url(../assets/img/bg-decorate/vector-line.png);
   background-position: 0 0;
@@ -96,7 +96,7 @@
   line-height: 150%;
   letter-spacing: 0.26px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
 
   @media (min-width: 375px) {
     font-size: 26px;

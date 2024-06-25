@@ -1,5 +1,5 @@
 .game {
-  padding-top: 181px;
+  padding-top: 113px;
   padding-bottom: 181px;
   background: #000;
   background-image: url(../assets/img/game/bg/bg-mob.webp);
@@ -165,8 +165,8 @@
   }
 
   @media (min-width: 375px) {
-    bottom: 14%;
-    left: 40%;
+    bottom: 13%;
+    left: 43%;
   }
   @media (min-width: 1920px) {
     margin-bottom: 38px;
@@ -180,8 +180,8 @@
   height: 379px;
 
   @media (max-width: 767px) {
-    margin-left: -70px;
-    margin-top: -70px;
+    margin-left: -61px;
+    margin-top: -80px;
   }
 
   @media (min-width: 768px) {
