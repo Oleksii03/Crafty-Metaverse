@@ -24,6 +24,11 @@
   background-size: 100% 100%, auto;
   backdrop-filter: blur(15px);
 
+  @media (min-width: 768px) {
+    display: flex;
+    background-position: 50% 50%, 0 40%;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -34,6 +39,22 @@
     border-radius: 5px;
     background: #7f5cff;
     box-shadow: 0px 4px 13px 0px rgba(191, 58, 255, 0.44);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 57%;
+    right: 10%;
+    width: 46px;
+    height: 46px;
+    background-image: url(../../../assets/img/bg-decorate/star-lg.svg);
+    background-repeat: no-repeat;
+
+    @media (min-width: 768px) {
+      bottom: 11%;
+      right: 55%;
+    }
   }
 
   &-title {
@@ -83,17 +104,39 @@
   height: auto;
 
   @media (min-width: 768px) {
-    width: 569px;
+    width: 250px;
   }
 }
 
 // ---explore__bottom-----
 
 .explore__bottom {
+  position: relative;
+
   &-img {
     height: 350px;
     width: 550px;
-    margin-left: -220px;
+    margin-left: -215px;
+
+    @media (min-width: 768px) {
+      margin-left: -40px;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -44px;
+    right: 25%;
+    width: 46px;
+    height: 46px;
+    background-image: url(../../../assets/img/bg-decorate/star-lg.svg);
+    background-repeat: no-repeat;
+
+    @media (min-width: 768px) {
+      top: -15px;
+      right: 40%;
+    }
   }
 }
 
@@ -113,6 +156,10 @@
   background-position: 0 50%;
 
   backdrop-filter: blur(15px);
+
+  @media (min-width: 768px) {
+    margin-top: -130px;
+  }
 
   &::before {
     content: '';
