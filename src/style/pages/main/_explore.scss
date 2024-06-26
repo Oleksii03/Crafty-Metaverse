@@ -15,10 +15,12 @@
     background-image: url(../assets/img/explore/ellipse.webp);
     background-repeat: no-repeat;
     background-position: 0 50%;
+    padding-bottom: 60px;
   }
   @media (min-width: 1920px) {
     padding-top: 240px;
-    padding-bottom: 215px;
+    padding-bottom: 142px;
+    row-gap: 256px;
   }
 }
 
@@ -246,11 +248,16 @@
     }
 
     @media (min-width: 1440px) {
-      width: 860.66px;
-      height: auto;
+      width: 1091px;
+      height: 610px;
       position: absolute;
-      bottom: -160px;
+      bottom: -5px;
       left: 0;
+      margin-left: 0px;
+    }
+
+    @media (min-width: 1920px) {
+      bottom: -150px;
     }
   }
 
@@ -268,7 +275,15 @@
       top: -15px;
       right: 40%;
     }
+    @media (min-width: 1440px) {
+      top: 96%;
+      right: 30%;
+    }
   }
+}
+
+.explore__container-bottom {
+  width: 100%;
 }
 
 .explore__content-bottom {
@@ -300,7 +315,7 @@
       ),
       url(../assets/img/bg-decorate/Vector-line.svg);
     background-repeat: repeat-y;
-    max-width: 70%;
+    max-width: 1130px;
     margin-left: auto;
   }
 
@@ -330,6 +345,22 @@
     padding-left: 18px;
     padding-right: 16px;
     padding-bottom: 85px;
+
+    @media (min-width: 1440px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 50px;
+
+      padding-top: 80px;
+      padding-left: 100px;
+      padding-right: 68px;
+      padding-bottom: 139px;
+    }
+
+    @media (min-width: 1920px) {
+      padding-left: 140px;
+    }
   }
 
   &-title {
@@ -337,6 +368,11 @@
     line-height: 142.5%;
     text-transform: uppercase;
     margin-bottom: 12px;
+
+    @media (min-width: 1440px) {
+      width: 397px;
+      font-size: 45px;
+    }
   }
 
   &-text {
@@ -346,7 +382,15 @@
     font-weight: 400;
     line-height: 160%;
     margin-bottom: 24px;
+
+    @media (min-width: 1440px) {
+      width: 470px;
+      flex-shrink: 0;
+      margin-bottom: -70px;
+      margin-left: 5px;
+    }
   }
+
   &-btn {
     display: inline-block;
     min-width: 176px;
@@ -361,5 +405,15 @@
     font-size: 18px;
     text-align: center;
     line-height: 145%;
+
+    @media (min-width: 1440px) {
+      position: absolute;
+      bottom: 55px;
+      left: 100px;
+    }
+
+    @media (min-width: 1920px) {
+      left: 140px;
+    }
   }
 }
