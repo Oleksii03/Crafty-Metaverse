@@ -7,5 +7,7 @@
    "trailingComma": "none",
    "bracketSpacing": true,
    "arrowParens": "avoid",
-   "proseWrap": "always"
+   "proseWrap": "always",
+   "vueIndentScriptAndStyle": true,
+   "singleAttributePerLine": true
 }
