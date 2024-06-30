@@ -43,6 +43,7 @@
     align-items: center;
     text-align: center;
     overflow-y: hidden;
+    transition: all 0.5s ease-in-out;
 
     &:nth-child(2) > .our-team__list-content > .our-team__list-title {
       color: #2c4dff;
@@ -62,9 +63,12 @@
       color: #fb41ff;
     }
 
-    &:hover > .inner-list {
-      max-height: 46px;
-      transform: translateY(0);
+    &:hover {
+      transform: translateY(-50px);
+      & > .inner-list {
+        max-height: 46px;
+        transform: translateY(0);
+      }
     }
   }
 
