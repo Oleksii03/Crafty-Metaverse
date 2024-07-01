@@ -24,6 +24,7 @@
 
 .our-team__list {
   display: grid;
+  align-items: baseline;
   row-gap: 25px;
   margin-top: 66px;
 
@@ -34,6 +35,8 @@
 
   @media (min-width: 1920px) {
     grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+    margin-top: 85px;
   }
 
   &-item {
@@ -42,32 +45,54 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    overflow-y: hidden;
+    overflow-x: hidden;
     transition: all 0.5s ease-in-out;
 
-    &:nth-child(2) > .our-team__list-content > .our-team__list-title {
-      color: #2c4dff;
-    }
-    &:nth-child(3) {
-      @media (min-width: 1920px) {
-        & > .our-team__list-picture {
-          margin-top: 114px;
-        }
+    &:nth-child(2) {
+      position: relative;
+      padding-top: 100px;
+      & > .our-team__list-content > .our-team__list-title {
+        color: #2c4dff;
       }
 
+      @media (min-width: 1920px) {
+        & > .our-team__list-content {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    &:nth-child(3) {
       & > .our-team__list-content > .our-team__list-title {
         color: #bf3aff;
       }
     }
-    &:nth-child(4) > .our-team__list-content > .our-team__list-title {
-      color: #fb41ff;
+
+    &:nth-child(4) {
+      position: relative;
+      padding-top: 100px;
+      & > .our-team__list-content > .our-team__list-title {
+        color: #fb41ff;
+      }
+
+      @media (min-width: 1920px) {
+        & > .our-team__list-content {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
     }
 
     &:hover {
-      transform: translateY(-50px);
+      transform: translateY(-80px);
       & > .inner-list {
-        max-height: 46px;
         transform: translateY(0);
+        opacity: 1;
       }
     }
   }
@@ -110,31 +135,15 @@
   }
 }
 
-//----our-team-list-content-----
-
-.our-team__list-content {
-  &_top {
-    display: none;
-    @media (min-width: 768px) {
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-  &_bottom {
-    @media (min-width: 768px) {
-      display: none;
-    }
-  }
-}
-
 // ---social-list---
 
 .inner-list {
   display: flex;
   align-items: center;
   column-gap: 15px;
-  transition: all 1s linear;
-  transform: translateX(-200%);
+  transition: all 0.5s linear;
+  transform: translateX(-100%);
+  opacity: 0;
 
   &__social-link {
     display: block;
