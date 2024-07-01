@@ -9,10 +9,30 @@
 // accordion-----
 
 .accordion-faq {
+  position: relative;
   max-width: 1296px;
   margin: 0 auto;
-  padding: 20px;
-  border: 2px solid rgba(160, 52, 217, 0.34);
+  padding: 60px 20px;
+  border: 4px solid rgba(160, 52, 217, 0.34);
+  // clip-path: polygon(8% 0, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 3%);
+
+  background: url(/assets/img/bg-decorate/vector-line.png);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -27px;
+    left: -19px;
+    width: 40px;
+    height: 40px;
+    // background-color: #transparent;
+
+    border-top: 30px solid transparent;
+    border-right: 30px solid #18072d;
+    border-bottom: 30px solid transparent;
+    border-left: 0 solid transparent;
+    transform: rotate(45deg);
+  }
 
   &__sup-title,
   &__title {
