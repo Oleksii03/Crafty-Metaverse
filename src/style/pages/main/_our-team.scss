@@ -49,10 +49,13 @@
     transition: all 0.5s ease-in-out;
 
     &:nth-child(2) {
-      position: relative;
-      padding-top: 100px;
       & > .our-team__list-content > .our-team__list-title {
         color: #2c4dff;
+      }
+
+      @media (min-width: 1920px) {
+        position: relative;
+        padding-top: 100px;
       }
 
       @media (min-width: 1920px) {
@@ -72,10 +75,13 @@
     }
 
     &:nth-child(4) {
-      position: relative;
-      padding-top: 100px;
       & > .our-team__list-content > .our-team__list-title {
         color: #fb41ff;
+      }
+
+      @media (min-width: 1920px) {
+        position: relative;
+        padding-top: 100px;
       }
 
       @media (min-width: 1920px) {
@@ -89,10 +95,35 @@
     }
 
     &:hover {
-      transform: translateY(-80px);
+      transform: translateY(-50px);
       & > .inner-list {
         transform: translateY(0);
         opacity: 1;
+      }
+
+      @media (min-width: 1920px) {
+        transform: translateY(-80px);
+      }
+    }
+  }
+
+  .our-team__list-picture {
+    &_last {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 10%;
+        left: 75%;
+        width: 46px;
+        height: 46px;
+        background-image: url(../assets/img/bg-decorate/star-lg.svg);
+        background-repeat: no-repeat;
+
+        @media (min-width: 1920px) {
+          left: 43%;
+          bottom: 0;
+        }
       }
     }
   }
