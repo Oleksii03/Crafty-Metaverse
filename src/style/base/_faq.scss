@@ -25,8 +25,6 @@
     left: -19px;
     width: 40px;
     height: 40px;
-    // background-color: #transparent;
-
     border-top: 30px solid transparent;
     border-right: 30px solid #18072d;
     border-bottom: 30px solid transparent;
@@ -60,6 +58,7 @@
 
 .list-faq {
   &__title-content {
+    cursor: pointer;
     padding-bottom: 24px;
     padding-top: 18px;
 
