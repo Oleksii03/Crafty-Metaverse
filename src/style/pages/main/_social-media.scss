@@ -1,7 +1,6 @@
 .social-media {
   position: relative;
   background-color: var(--black-background-color);
-  min-height: 100vh;
   padding-top: 15px;
   padding-bottom: 60px;
 
@@ -26,6 +25,10 @@
   &__img {
     height: auto;
     width: 200px;
+
+    @media (min-width: 768px) {
+      width: 170px;
+    }
   }
 
   @media (max-width: 767px) {
@@ -39,8 +42,17 @@
   margin-top: 50px;
   display: flex;
   align-items: center;
+
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+
+  @media (max-width: 767px) {
+    position: relative;
+    top: 0;
+    left: 0%;
+    width: 100vw;
+    padding-right: 40px;
+  }
 
   &-item {
     scroll-snap-align: center;
