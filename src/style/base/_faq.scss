@@ -17,6 +17,11 @@
     url(/assets/img/bg-decorate/vector-line.png);
   background-repeat: repeat-y;
 
+  @media (min-width: 1440px) {
+    padding: 96px 57px;
+    border: 4px solid rgba(156, 58, 255, 0.14);
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -38,6 +43,14 @@
     background-color: rgba(156, 58, 255, 0.14);
     transform: rotate(45deg);
     border-radius: 5px;
+
+    @media (min-width: 1440px) {
+      width: 4px;
+      top: -11px;
+      left: 15px;
+
+      height: 56px;
+    }
   }
 
   &__sup-title,
@@ -52,6 +65,10 @@
     font-weight: 400;
     line-height: 140%;
     margin-bottom: 20px;
+
+    @media (min-width: 1440px) {
+      font-size: 20px;
+    }
   }
 
   &__title {
@@ -59,6 +76,11 @@
     font-weight: 700;
     line-height: 109%;
     margin-bottom: 30px;
+
+    @media (min-width: 1440px) {
+      font-size: 45px;
+      margin-bottom: 87px;
+    }
   }
 }
 
@@ -69,9 +91,7 @@
     cursor: pointer;
     padding-bottom: 24px;
     padding-top: 18px;
-
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,6 +99,11 @@
 
     &_active > .list-faq__cross {
       transform: rotate(45deg);
+    }
+
+    @media (min-width: 1440px) {
+      padding-bottom: 51px;
+      padding-top: 42px;
     }
   }
 
@@ -89,6 +114,11 @@
     flex-shrink: 0;
     transition: all 0.3s ease-in-out;
 
+    @media (min-width: 1440px) {
+      width: 30px;
+      height: 4px;
+    }
+
     &::before {
       content: '';
       display: block;
@@ -96,6 +126,12 @@
       height: 16px;
       background-color: #fff;
       transform: translate(7px, -7px);
+
+      @media (min-width: 1440px) {
+        width: 4px;
+        height: 30px;
+        transform: translate(13px, -13px);
+      }
     }
   }
 
@@ -104,6 +140,10 @@
     font-weight: 700;
     line-height: 140%;
     text-transform: uppercase;
+
+    @media (min-width: 1440px) {
+      font-size: 30px;
+    }
   }
 
   &__description-content {
@@ -120,6 +160,10 @@
 
     &-text {
       padding-top: 21px;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 24px;
     }
   }
 }
