@@ -1,8 +1,8 @@
 .faq {
+  position: relative;
   padding-top: 82px;
   padding-bottom: 82px;
   background-color: #0c0415;
-
   background-image: url(/assets/img/faq/blur-left.webp);
   background-repeat: no-repeat;
   @media (min-width: 1440px) {
@@ -186,5 +186,67 @@
     @media (min-width: 1440px) {
       font-size: 24px;
     }
+  }
+}
+
+// ---animation-----
+
+.faq__running-line {
+  position: absolute;
+  top: 52px;
+  left: -50%;
+  background-color: var(--black-background-color);
+  background-size: 150% 30px;
+  transform: rotate(6deg);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  text-align: right;
+  font-size: 32.878px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.329px;
+
+  @media (min-width: 1440px) {
+    top: 78px;
+  }
+
+  &-text {
+    background: var(--2, linear-gradient(90deg, #21fcff 0%, #fd40ff 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-wrap: nowrap;
+    flex-shrink: 0;
+
+    @media (min-width: 1440px) {
+      font-size: 50px;
+      padding: 20px;
+    }
+
+    @media (min-width: 1920px) {
+      font-size: 72px;
+    }
+
+    animation: running-line-bottom 15s linear infinite;
+
+    @keyframes running-line-bottom {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  }
+}
+
+.faq__run-star {
+  width: 30px;
+  height: 30px;
+  @media (min-width: 1440px) {
+    width: 50px;
+    height: 50px;
   }
 }
