@@ -1,11 +1,18 @@
 .faq {
   padding-top: 82px;
-  padding-bottom: 200px;
-  background-color: #18072d;
+  padding-bottom: 82px;
+  background-color: #0c0415;
 
+  background-image: url(/assets/img/faq/blur-left.webp);
+  background-repeat: no-repeat;
   @media (min-width: 1440px) {
     padding-top: 282px;
-    padding-bottom: 270px;
+    padding-bottom: 200px;
+
+    background-image: url(/assets/img/faq/curve.webp), url(/assets/img/faq/blur-left.webp),
+      url(../../assets/img/faq/blur-right.webp);
+
+    background-position: 100% -90%, top left, right bottom;
   }
 }
 
@@ -13,6 +20,7 @@
 
 .accordion-faq {
   position: relative;
+  z-index: 22;
   max-width: 1296px;
   margin: 0 auto;
   padding: 60px 20px;
@@ -37,7 +45,7 @@
     left: -5px;
     width: 45px;
     height: 45px;
-    background-color: #18072d;
+    background-color: #0c0415;
     clip-path: polygon(100% 0, 0 0, 0 100%);
   }
 
@@ -48,7 +56,7 @@
     left: 15px;
     width: 2px;
     height: 49px;
-    background-color: rgba(156, 58, 255, 0.216);
+    background-color: rgba(156, 58, 255, 0.198);
     transform: rotate(45deg);
     border-radius: 5px;
 
