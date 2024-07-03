@@ -86,9 +86,14 @@
   }
 
   &-item {
+    cursor: pointer;
     scroll-snap-align: center;
     scroll-snap-stop: always;
-
+    &:last-child {
+      background-image: url(../assets/img/bg-decorate/star-lg.svg);
+      background-repeat: no-repeat;
+      background-position: 70px 0;
+    }
     @media (max-width: 767px) {
       &:first-child {
         margin-left: 26px;
