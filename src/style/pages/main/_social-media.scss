@@ -88,7 +88,15 @@
   &-item {
     scroll-snap-align: center;
     scroll-snap-stop: always;
-    padding-left: 26px;
+
+    @media (max-width: 767px) {
+      &:first-child {
+        margin-left: 26px;
+      }
+      &:last-child {
+        margin-right: 26px;
+      }
+    }
   }
 
   @media (min-width: 768px) {
