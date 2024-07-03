@@ -3,7 +3,6 @@
   background-color: var(--black-background-color);
   padding-top: 15px;
   padding-bottom: 60px;
-
   background-image: url(../assets/img/social-media/bg.webp),
     url(../assets/img/social-media/bg-blur-sm-2.webp),
     url(../assets/img/social-media/bg-blur-left-sm.webp);
@@ -14,11 +13,9 @@
   @media (min-width: 1440px) {
     padding-top: 24px;
     padding-bottom: 470px;
-
     background-image: url(../assets/img/social-media/bg.webp),
       url(../assets/img/social-media/bg-blur-left-lg.webp),
       url(../assets/img/social-media/bg-blur-center-lg.webp);
-
     background-position: 0 0, 0 100%, 50% 0%;
     background-repeat: no-repeat;
     background-size: cover, contain, 1200px 800px;
@@ -75,7 +72,6 @@
   margin-top: 50px;
   display: flex;
   align-items: center;
-
   overflow-x: auto;
   scroll-snap-type: x mandatory;
 
@@ -84,7 +80,6 @@
     top: 0;
     left: 0%;
     width: 100vw;
-    padding-right: 40px;
   }
   @media (min-width: 1440px) {
     margin-top: 81px;
@@ -93,6 +88,7 @@
   &-item {
     scroll-snap-align: center;
     scroll-snap-stop: always;
+    padding-left: 26px;
   }
 
   @media (min-width: 768px) {
