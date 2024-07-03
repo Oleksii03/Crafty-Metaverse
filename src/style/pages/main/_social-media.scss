@@ -94,6 +94,7 @@
     cursor: pointer;
     scroll-snap-align: center;
     scroll-snap-stop: always;
+    transition: all 0.3s ease-in-out;
     &:last-child {
       background-image: url(../assets/img/bg-decorate/star-lg.svg);
       background-repeat: no-repeat;
@@ -105,6 +106,13 @@
       }
       &:last-child {
         margin-right: 26px;
+      }
+    }
+
+    @media (min-width: 1440px) {
+      &:hover {
+        transform: scale(1.1);
+        filter: drop-shadow(0 2px 20px rgb(160, 0, 210));
       }
     }
   }
