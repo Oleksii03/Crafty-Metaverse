@@ -195,7 +195,7 @@
 
 .faq__running-line {
   position: absolute;
-  top: 52px;
+  top: 122px;
   left: -50%;
   background-color: var(--black-background-color);
   background-size: 150% 30px;
@@ -211,7 +211,7 @@
   letter-spacing: 0.329px;
 
   @media (min-width: 1440px) {
-    top: 78px;
+    top: 230px;
   }
 
   &-text {
