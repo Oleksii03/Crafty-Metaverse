@@ -4,22 +4,52 @@
   padding-top: 15px;
   padding-bottom: 60px;
 
-  background-image: url(../assets/img/social-media/bg.webp);
-  background-position: 0 0;
+  background-image: url(../assets/img/social-media/bg.webp),
+    url(../assets/img/social-media/bg-blur-sm-2.webp),
+    url(../assets/img/social-media/bg-blur-left-sm.webp);
+  background-position: 0 0, 0 50%, 0 100%;
   background-repeat: no-repeat;
   background-size: cover;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: -240px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../assets/img/social-media/bg-blur-sm.webp);
-    background-position: right;
+  @media (min-width: 1440px) {
+    padding-top: 24px;
+    padding-bottom: 470px;
+
+    background-image: url(../assets/img/social-media/bg.webp),
+      url(../assets/img/social-media/bg-blur-left-lg.webp),
+      url(../assets/img/social-media/bg-blur-center-lg.webp);
+
+    background-position: 0 0, 0 100%, 50% 0%;
     background-repeat: no-repeat;
-    pointer-events: none;
+    background-size: cover, contain, 1200px 800px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../assets/img/social-media/bg-blur-right-lg.webp);
+      background-position: right;
+      background-repeat: no-repeat;
+      pointer-events: none;
+    }
+  }
+
+  @media (max-width: 1439px) {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../assets/img/social-media/bg-blur-sm.webp);
+      background-position: right;
+      background-repeat: no-repeat;
+      pointer-events: none;
+    }
   }
 
   &__img {
@@ -28,6 +58,9 @@
 
     @media (min-width: 768px) {
       width: 170px;
+    }
+    @media (min-width: 1440px) {
+      width: 280px;
     }
   }
 
@@ -52,6 +85,9 @@
     left: 0%;
     width: 100vw;
     padding-right: 40px;
+  }
+  @media (min-width: 1440px) {
+    margin-top: 81px;
   }
 
   &-item {
