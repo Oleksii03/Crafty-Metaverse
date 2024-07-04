@@ -1,9 +1,7 @@
 .our-resources {
   position: relative;
-
   padding-top: 80px;
   padding-bottom: 110px;
-
   background: var(--black-background-color);
 
   @media (max-width: 767px) {
@@ -20,19 +18,15 @@
 }
 
 .our-resources__content {
+  margin-top: 47px;
+  display: grid;
+  row-gap: 100px;
+
   @media (min-width: 768px) {
     background-image: url(../assets/img/our-resources/ellipse-lg.webp);
     background-repeat: no-repeat;
     background-position: 0 50%;
     background-size: 100% 100%;
-  }
-
-  margin-top: 47px;
-
-  display: grid;
-  row-gap: 100px;
-
-  @media (min-width: 768px) {
     grid-template-columns: 40% 50%;
     align-items: center;
   }
@@ -41,12 +35,17 @@
     margin-top: 77px;
     column-gap: 64px;
   }
+
+  &-img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+  }
 }
 
 .our-resources__content-description {
   position: relative;
   padding: 40px 0px 100px 24px;
-
   background-image: url(../assets/img/bg-decorate/vector-line.png);
   background-position: 0 0;
   background-repeat: repeat-y;
@@ -58,7 +57,6 @@
     left: 0;
     width: 5px;
     height: 100%;
-
     border-radius: 5px;
     background: #bf3aff;
     box-shadow: 0px 0px 17px 0px rgba(191, 58, 255, 0.4);
@@ -75,7 +73,6 @@
     right: 5px;
     width: 46px;
     height: 46px;
-
     background-image: url(../assets/img/bg-decorate/star-lg.svg);
     background-repeat: no-repeat;
 
@@ -107,7 +104,6 @@
 .our-resources__logo-img {
   width: 40px;
   height: 40px;
-
   margin-bottom: 34px;
 
   @media (min-width: 1440px) {
@@ -120,9 +116,7 @@
 
 .description-content__title {
   margin-bottom: 25px;
-
   font-size: 24px;
-
   font-weight: 700;
   line-height: 109%;
   text-transform: uppercase;
@@ -136,13 +130,11 @@
 
 .description-content__text {
   margin-bottom: 36px;
-
   font-family: 'Gilroy';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
-
   opacity: 0.6;
 
   @media (min-width: 1440px) {
@@ -181,11 +173,8 @@
   font-weight: 900;
   line-height: 145%;
   text-align: center;
-
   transition: box-shadow 250ms linear;
-
   padding: 15px 30px;
-
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.56);
   background: linear-gradient(99deg, #7a42f4 0%, #4642f4 100%), #fff;
@@ -200,10 +189,8 @@
 
   @media (min-width: 1440px) {
     border-radius: 6px;
-
     padding: 16px 24px;
     font-size: 18px;
-
     display: block;
     margin: 0 auto;
     max-width: 270px;
@@ -283,7 +270,6 @@
   padding: 5px 0px;
   background-color: var(--black-background-color);
   background-size: 200% 30px;
-
   display: flex;
   align-items: center;
   overflow: hidden;
