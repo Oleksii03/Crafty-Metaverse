@@ -36,8 +36,8 @@
   }
 
   @media (min-width: 1920px) {
-    padding-top: 377px;
-    padding-bottom: 90px;
+    padding-top: 345px;
+    padding-bottom: 95px;
   }
 }
 
@@ -61,11 +61,7 @@
   order: 2;
   position: relative;
   border-radius: 10px;
-  background: linear-gradient(
-      to top,
-      rgba(58, 78, 255, 0) 0%,
-      rgba(156, 58, 255, 0.031) 100%
-    ),
+  background: linear-gradient(to top, rgba(58, 78, 255, 0) 0%, rgba(156, 58, 255, 0.031) 100%),
     url(../assets/img/game/bg/line-bg.webp);
   background-size: 107px 180%;
   background-repeat: repeat-x;
