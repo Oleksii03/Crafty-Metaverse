@@ -7,6 +7,8 @@
 
   animation: hidden auto linear;
   animation-timeline: scroll();
+  -webkit-animation-timeline: scroll();
+  -moz-animation-timeline: scroll();
 
   @keyframes hidden {
     0% {
