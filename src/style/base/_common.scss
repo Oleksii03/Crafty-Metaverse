@@ -68,8 +68,8 @@ main {
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #7a11dd9b;
-    border: 3px solid #18041ef5;
-    border-radius: 5px;
+    background: var(--2, linear-gradient(#21fbff 0%, #fd40ff 100%));
+    border: 2px solid #18041ef5;
+    border-radius: 4px;
   }
 }
