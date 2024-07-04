@@ -69,10 +69,16 @@
     flex-basis: 50%;
     transition: all 0.3s linear;
     cursor: pointer;
-    &:hover {
+
+    &-active {
       background-color: #ffffff36;
       box-shadow: inset 1px 0px 8px 0px rgba(0, 0, 0, 0.75);
     }
+
+    // &:hover {
+    //   background-color: #ffffff36;
+    //   box-shadow: inset 1px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    // }
   }
 
   &::before {

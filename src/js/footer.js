@@ -3,36 +3,25 @@ export function footer() {
   const contactHiddenBox = document.querySelector('.js-contact-box-hidden');
   const addressHiddenBox = document.querySelector('.js-address-box-hidden');
 
-  console.log();
-
-  contactBox.addEventListener('click', onOpenContact);
-
-  function onOpenContact(e) {
+  contactBox.addEventListener('click', onToggle);
+  function onToggle(e) {
     let targetEl = e.target.closest('.js-contact');
 
-    if (
-      targetEl.classList.contains('footer__box-center_top') &&
-      !contactHiddenBox.classList.contains('contact-box-hidden_active')
-    ) {
-      contactHiddenBox.classList.add('contact-box-hidden_active');
-      addressHiddenBox.classList.remove('address-box-hidden_active');
-      return;
-    } else if (
-      targetEl.classList.contains('footer__box-center_top') &&
-      contactHiddenBox.classList.contains('contact-box-hidden_active')
-    ) {
-      contactHiddenBox.classList.remove('contact-box-hidden_active');
-      return;
-    }
+    if (targetEl.classList.contains('js-phone')) togglePhoneNumber(targetEl);
+    if (targetEl.classList.contains('js-address')) toggleAddress(targetEl);
+  }
 
-    if (
-      targetEl.classList.contains('footer__box-center_bottom') &&
-      !addressHiddenBox.classList.contains('address-box-hidden_active')
-    ) {
-      addressHiddenBox.classList.add('address-box-hidden_active');
-      contactHiddenBox.classList.remove('contact-box-hidden_active');
-    } else {
-      addressHiddenBox.classList.remove('address-box-hidden_active');
-    }
+  function togglePhoneNumber(target) {
+    target.classList.toggle('footer__box-center_top-active');
+    contactHiddenBox.classList.toggle('contact-box-hidden_active');
+    addressHiddenBox.classList.remove('address-box-hidden_active');
+    target.nextElementSibling.classList.remove('footer__box-center_bottom-active');
+  }
+
+  function toggleAddress(target) {
+    target.classList.toggle('footer__box-center_bottom-active');
+    addressHiddenBox.classList.toggle('address-box-hidden_active');
+    contactHiddenBox.classList.remove('contact-box-hidden_active');
+    target.previousElementSibling.classList.remove('footer__box-center_top-active');
   }
 }
