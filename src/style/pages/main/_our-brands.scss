@@ -41,7 +41,7 @@
     column-gap: 30px;
   }
   @media (min-width: 1440px) {
-    column-gap: 50px;
+    column-gap: 100px;
   }
 }
 
@@ -59,7 +59,7 @@
       content: '';
       position: absolute;
       top: -7px;
-      left: 50%;
+      left: 54%;
       width: 46px;
       height: 46px;
 
@@ -188,6 +188,10 @@
   @media (min-width: 768px) and (max-width: 1439px) {
     max-width: 298px;
     height: 270px;
+  }
+  @media (min-width: 1920px) {
+    max-width: 325px;
+    height: 400px;
   }
 }
 

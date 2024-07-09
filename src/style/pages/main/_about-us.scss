@@ -43,7 +43,7 @@
 .about-us__content {
   position: relative;
   padding: 14px 0px 14px 24px;
-  max-width: 612px;
+  max-width: 660px;
 
   background-image: url(../assets/img/bg-decorate/vector-line.png);
   background-position: 0 0;
@@ -156,8 +156,15 @@
   opacity: 0.8;
   margin-bottom: 64px;
 
+  &_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 405px;
+  }
+
   @media (min-width: 1440px) {
     font-size: 20px;
-    margin-bottom: 68px;
+    margin-bottom: 95px;
   }
 }

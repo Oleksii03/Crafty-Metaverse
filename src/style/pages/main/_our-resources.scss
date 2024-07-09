@@ -15,6 +15,12 @@
     padding-top: 30px;
     padding-bottom: 318px;
   }
+
+  &__container {
+    @media (min-width: 1440px) {
+      max-width: 1638px;
+    }
+  }
 }
 
 .our-resources__content {
@@ -32,8 +38,8 @@
   }
 
   @media (min-width: 1440px) {
-    margin-top: 41px;
-    column-gap: 64px;
+    margin-top: 20px;
+    column-gap: 45px;
   }
 
   &-img {
@@ -43,6 +49,10 @@
 
     @media (min-width: 768px) {
       aspect-ratio: 1/1;
+    }
+    @media (min-width: 1920px) {
+      width: 900px;
+      height: 815px;
     }
   }
 }
@@ -85,8 +95,8 @@
       right: -60px;
     }
     @media (min-width: 1920px) {
-      bottom: -17%;
-      right: 72%;
+      bottom: -16%;
+      right: 73%;
     }
   }
 
@@ -101,7 +111,8 @@
     background-image: url(../assets/img/bg-decorate/Vector-line.svg);
   }
   @media (min-width: 1920px) {
-    padding: 68px 0px 100px 125px;
+    padding: 63px 0px 100px 148px;
+    min-height: 538px;
   }
 }
 
@@ -126,7 +137,7 @@
   text-transform: uppercase;
 
   @media (min-width: 1440px) {
-    margin-bottom: 27px;
+    margin-bottom: 35px;
     text-align: center;
     font-size: 35px;
   }
