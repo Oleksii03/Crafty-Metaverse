@@ -22,8 +22,8 @@
   }
 
   @media (min-width: 1440px) {
-    padding-top: 24px;
-    padding-bottom: 470px;
+    padding-top: 107px;
+    padding-bottom: 479px;
     background-image: url(../assets/img/social-media/bg.webp),
       url(../assets/img/social-media/bg-blur-left-lg.webp),
       url(../assets/img/social-media/bg-blur-center-lg.webp);
@@ -69,7 +69,8 @@
       width: 170px;
     }
     @media (min-width: 1440px) {
-      width: 280px;
+      width: 266px;
+      height: 367px;
     }
   }
 }
@@ -89,6 +90,7 @@
   }
   @media (min-width: 1440px) {
     margin-top: 92px;
+    column-gap: 15px;
   }
 
   &-item {

@@ -105,6 +105,9 @@
 // ---list----------
 
 .list-faq {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
   &__title-content {
     cursor: pointer;
     padding-bottom: 24px;
@@ -210,7 +213,7 @@
   letter-spacing: 0.329px;
 
   @media (min-width: 1440px) {
-    top: 230px;
+    top: 244px;
   }
 
   &-text {
@@ -223,7 +226,7 @@
 
     @media (min-width: 1440px) {
       font-size: 50px;
-      padding: 20px;
+      padding: 20px 0px;
     }
 
     @media (min-width: 1920px) {

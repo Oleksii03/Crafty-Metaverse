@@ -20,9 +20,9 @@
       position: absolute;
       top: 10%;
       right: 0;
-      width: 232.767px;
-      height: 229.993px;
-      background-image: url(../assets/img/our-resources/Gradients-img-sm.webp);
+      width: 100%;
+      height: 100%;
+      background-image: url(../../../assets/img/game/bg/ellipse-right.webp);
       background-repeat: no-repeat;
       background-size: contain;
 
@@ -36,7 +36,7 @@
   }
 
   @media (min-width: 1920px) {
-    padding-top: 345px;
+    padding-top: 320px;
     padding-bottom: 95px;
   }
 }
@@ -111,7 +111,7 @@
 
     @media (min-width: 1920px) {
       font-size: 20px;
-      margin-bottom: 46px;
+      margin-bottom: 33px;
     }
   }
 
@@ -147,7 +147,7 @@
     background-size: 107px 200%;
   }
   @media (min-width: 1920px) {
-    padding: 65px 27px 165px 36px;
+    padding: 72px 27px 165px 36px;
     width: 644px;
     margin-right: -115px;
 

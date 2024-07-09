@@ -238,6 +238,8 @@
 
   @media (min-width: 1920px) {
     bottom: -194px;
+    left: -59%;
+    transform: rotate(-9deg);
   }
 }
 
@@ -298,10 +300,16 @@
   overflow: hidden;
 
   &-text {
-    color: #fd40ff;
     font-size: 19px;
     line-height: 140%;
     letter-spacing: 0.189px;
+    text-wrap: nowrap;
+    flex-shrink: 0;
+
+    background: var(--2, linear-gradient(90deg, #21fcff 0%, #fd40ff 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-wrap: nowrap;
     flex-shrink: 0;
 

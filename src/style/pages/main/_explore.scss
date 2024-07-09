@@ -20,7 +20,7 @@
   @media (min-width: 1920px) {
     padding-top: 240px;
     padding-bottom: 142px;
-    row-gap: 263px;
+    row-gap: 259px;
   }
 }
 
@@ -173,6 +173,7 @@
 
     @media (min-width: 1920px) {
       font-size: 20px;
+      width: 397px;
     }
   }
 
@@ -276,6 +277,10 @@
 
 .explore__container-bottom {
   width: 100%;
+
+  @media (min-width: 1920px) {
+    max-width: 1675px;
+  }
 }
 
 .explore__content-bottom {
@@ -343,7 +348,7 @@
     }
 
     @media (min-width: 1920px) {
-      padding-left: 140px;
+      padding-left: 125px;
     }
   }
 
@@ -356,6 +361,7 @@
     @media (min-width: 1440px) {
       width: 397px;
       font-size: 45px;
+      margin-bottom: 8px;
     }
   }
 
@@ -393,7 +399,7 @@
     }
 
     @media (min-width: 1920px) {
-      left: 140px;
+      left: 130px;
     }
   }
 }
