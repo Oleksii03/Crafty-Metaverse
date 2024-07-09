@@ -4,24 +4,31 @@
   left: 0;
   width: 100%;
   z-index: 10;
-  background-image: linear-gradient(to bottom, #000, #0000003c);
-  backdrop-filter: blur(10px);
 
-  @supports (animation-timeline: scroll()) {
-    animation: hidden auto linear;
-    animation-timeline: scroll();
+  @media (max-width: 767px) {
+    background-image: linear-gradient(to bottom, #000, #0000003c);
+    backdrop-filter: blur(10px);
 
-    @keyframes hidden {
-      0% {
-        background: transparent;
-      }
+    @supports (animation-timeline: scroll()) {
+      animation: hidden auto linear;
+      animation-timeline: scroll();
 
-      5%,
-      100% {
-        background: rgba(0, 0, 0, 0.777);
-        box-shadow: 2px 4px 10px 3px #000000;
+      @keyframes hidden {
+        0% {
+          background: transparent;
+        }
+
+        5%,
+        100% {
+          background: rgba(0, 0, 0, 0.777);
+          box-shadow: 2px 4px 10px 3px #000000;
+        }
       }
     }
+  }
+
+  @media (min-width: 768px) {
+    position: absolute;
   }
 }
 
@@ -52,7 +59,7 @@
       position: relative;
       display: block;
       font-family: var(--secondary-font);
-      font-size: 0.875rem;
+      font-size: 14px;
       font-weight: 500;
       opacity: 0.7;
       transition: all 250ms linear;
@@ -81,7 +88,7 @@
       }
 
       @media (min-width: 1440px) {
-        font-size: 1.25rem;
+        font-size: 20px;
         padding-top: 50px;
         padding-bottom: 50px;
 
@@ -103,8 +110,8 @@
 }
 
 .logo__img {
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 35px;
+  height: 35px;
 }
 
 .header__menu-btn {
