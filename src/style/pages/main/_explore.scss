@@ -4,7 +4,7 @@
   overflow: hidden;
   background-color: var(--black-background-color);
   display: grid;
-  row-gap: 52px;
+  row-gap: 36px;
 
   @media (min-width: 768px) {
     row-gap: 100px;
@@ -188,7 +188,7 @@
     text-align: center;
     line-height: 145%;
     margin-top: 15px;
-    margin-bottom: 34px;
+    margin-bottom: 20px;
 
     @media (min-width: 1440px) {
       margin-bottom: 0;
@@ -204,8 +204,9 @@
 
 .explore__content-top-img {
   margin: 0 auto;
-  width: 320px;
+  width: 326px;
   height: 100%;
+  aspect-ratio: 2/3;
 
   @media (min-width: 768px) {
     width: 250px;
