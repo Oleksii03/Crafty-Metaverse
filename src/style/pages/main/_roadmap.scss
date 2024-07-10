@@ -1,10 +1,8 @@
 .roadmap {
   overflow: hidden;
-
   padding-top: 88px;
   padding-bottom: 178px;
   background: #090812;
-
   background-image: url(../assets/img/roadmap/bg-decorate/ellipse-top-lg.webp),
     url(../assets/img/roadmap/bg-decorate/ellipse-bottom-lg.webp);
   background-repeat: no-repeat;
@@ -28,10 +26,8 @@
   max-width: 1260px;
   margin-left: auto;
   margin-right: auto;
-
   display: grid;
   row-gap: 148px;
-
   margin-top: 123px;
   background-image: url(../assets/img/roadmap/bg-decorate/bg-line-sm.png),
     url(../assets/img/roadmap/bg-decorate/bg-line-two.png);
@@ -103,13 +99,10 @@
   font-style: normal;
   line-height: 140%;
   letter-spacing: 0.15px;
-
   opacity: 0.8;
-
   display: flex;
   flex-direction: column;
   row-gap: 15px;
-
   max-width: 418px;
 
   @media (min-width: 1440px) {
@@ -253,14 +246,11 @@
 
 .list-more__btn {
   margin-top: 23px;
-
   background-color: transparent;
   display: flex;
   align-items: center;
-
   column-gap: 10px;
-
-  color: #fff;
+  color: var(--white-base-color);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
