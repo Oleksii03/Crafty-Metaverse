@@ -27,14 +27,14 @@
     background-image: url(../assets/img/social-media/bg.webp),
       url(../assets/img/social-media/bg-blur-left-lg.webp),
       url(../assets/img/social-media/bg-blur-center-lg.webp);
-    background-position: 0 0, 0 100%, 50% 0%;
+    background-position: 0 0, 0 100%, 50% 20%;
     background-repeat: no-repeat;
     background-size: cover, contain, 1200px 800px;
 
     &::before {
       content: '';
       position: absolute;
-      top: 0;
+      top: -20%;
       left: 0;
       width: 100%;
       height: 100%;
