@@ -24,9 +24,9 @@
 }
 
 .our-resources__content {
-  margin-top: 47px;
+  margin-top: 60px;
   display: grid;
-  row-gap: 42px;
+  row-gap: 60px;
 
   @media (min-width: 768px) {
     background-image: url(../assets/img/our-resources/ellipse-lg.webp);
@@ -43,13 +43,13 @@
   }
 
   &-img {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 4/5;
+    width: 352px;
+    height: 397px;
 
     @media (min-width: 768px) {
       aspect-ratio: 1/1;
     }
+
     @media (min-width: 1920px) {
       width: 900px;
       height: 815px;
@@ -60,7 +60,7 @@
 
 .our-resources__content-description {
   position: relative;
-  padding: 40px 0px 100px 24px;
+  padding: 40px 0px 100px 34px;
   background-image: url(../assets/img/bg-decorate/vector-line.png);
   background-position: 0 0;
   background-repeat: repeat-y;
@@ -85,7 +85,7 @@
     content: '';
     position: absolute;
     bottom: 30px;
-    right: 5px;
+    right: 13px;
     width: 46px;
     height: 46px;
     background-image: url(../assets/img/bg-decorate/star-lg.svg);
@@ -151,7 +151,7 @@
 }
 
 .description-content__text {
-  margin-bottom: 36px;
+  margin-bottom: 60px;
   font-family: 'Gilroy';
   font-size: 16px;
   font-style: normal;
@@ -233,7 +233,7 @@
   bottom: -77px;
   left: -50%;
   width: 200%;
-  transform: rotate(-10deg);
+  transform: rotate(-9deg);
   z-index: 1;
 
   @media (min-width: 1920px) {
@@ -254,7 +254,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 
   @media (min-width: 1440px) {
     background-size: 200% 161px;

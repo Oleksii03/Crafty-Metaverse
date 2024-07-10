@@ -1,6 +1,6 @@
 .our-brands {
-  padding-top: 72px;
-  padding-bottom: 78px;
+  padding-top: 65px;
+  padding-bottom: 58px;
 
   background-image: url(../assets/img/our-brands/vector-bg-line.png),
     url(../assets/img/our-brands/bg-img-sm.webp);
@@ -34,7 +34,7 @@
 
 .brands-list {
   display: grid;
-  row-gap: 70px;
+  row-gap: 93px;
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
@@ -182,7 +182,7 @@
 
 // ----img--------
 .brands-list__item-img {
-  max-width: 298px;
+  max-width: 330px;
   height: 399px;
 
   @media (min-width: 768px) and (max-width: 1439px) {
