@@ -157,13 +157,11 @@
   font-weight: 900;
   line-height: 145%;
   text-align: center;
-
   transition: box-shadow 250ms linear;
-
   padding: 14.417px 21.625px;
 
   border-radius: 5px;
-  border: 1px solid rgba(255, 255, 255, 0.56);
+  border: 2px solid rgba(255, 255, 255, 0.56);
   background: linear-gradient(99deg, #7a42f4 0%, #4642f4 100%), #fff;
 
   @media (min-width: 375px) {
@@ -172,10 +170,8 @@
 
   @media (min-width: 1440px) {
     border-radius: 6px;
-
     padding: 16px 24px;
     min-width: 209px;
-
     font-size: 18px;
   }
 
